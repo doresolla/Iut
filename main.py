@@ -117,7 +117,9 @@ class Calc(QMainWindow, Ui_MainWindow):
             self.tabWidget.setCurrentIndex(int(rb.text()[4]) - 1)
 
     def for_loop(self, index):
-
+      #ЧТЕНИЕ ТАБЛИЦЫ
+      #по строкам таблицы : for row_index in range(table_name.rowCount())
+      
         for i in range(self.tables[index].rowCount()):
             isEmpty = False
             for j in range(1, 3):
